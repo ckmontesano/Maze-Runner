@@ -5,8 +5,6 @@
 // this case, mazelib.c
 #include "mazelib.h"
 #include "runner.h" // header file
-#include <unistd.h> // !for sleep
-#include <stdlib.h> // !for clearing screen
 
 #define NORTH 0
 #define EAST 1
@@ -59,13 +57,7 @@ void runner_solve(void)
 
          movedForward = false;
       }
-
-      system("clear");
-      maze_display();
-      usleep(5000);
    }
-
-   system("clear");
 }
 
 /* support functions */
